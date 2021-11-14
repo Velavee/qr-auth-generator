@@ -1,0 +1,26 @@
+{
+  "name": "qr-auth-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Velavee/qr-auth-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Velavee/qr-auth-generator/issues"
+  },
+  "homepage": "https://github.com/Velavee/qr-auth-generator#readme",
+  "dependencies": {
+    "hmacsha1": "^1.0.0",
+    "hotp": "^3.0.0",
+    "qrcode": "^1.4.4",
+    "speakeasy": "^2.0.0",
+    "totp.js": "0.0.1"
+  }
+}
