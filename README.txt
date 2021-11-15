@@ -25,3 +25,5 @@ Both the QR code and the TOTPs are printed to the terminal. In order to test
 the program, scan the QR code with Google Authenticator. The TOTPs should match
 the code that Google Authenticator provides. There may, however, be some lag
 between this application and Google Authenticator.
+
+Quit the program by using Ctrl + C
