@@ -1,7 +1,13 @@
+// Sources:
+// https://github.com/wuyanxin/totp.js
+// https://datatracker.ietf.org/doc/html/rfc4226
+
 const QRcode = require('qrcode');
 const speakeasy = require('speakeasy');
 const TOTP = require('totp.js');
 
+
+// Generate a random secret and build a QR code based on it
 const generateQR = async secret => {
     secret = speakeasy.generateSecret({length: 20});
     try {
@@ -12,6 +18,7 @@ const generateQR = async secret => {
     }
 }
 
+// Generate a TOTP based on random secret. After 30 seconds, print the next TOTP
 const getTOTP = (secret) => {
     let totp = new TOTP(secret);
     let code = totp.genOTP();
