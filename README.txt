@@ -13,9 +13,13 @@ package-lock.json
 README.txt
 
 Instructions for Execution:
-The program prints the QR code and the TOTPs all with one command:
+Install dependencies with the following command:
 
-node index.js
+npm install
+
+The QR code and TOTPs are printed with a single command:
+
+node --harmony index.js
 
 Both the QR code and the TOTPs are printed to the terminal. In order to test
 the program, scan the QR code with Google Authenticator. The TOTPs should match
