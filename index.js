@@ -23,7 +23,7 @@ const getTOTP = (secret) => {
     setTimeout(function(){ getTOTP(secret); }, 30000)
 }
 
-const startGenerating = async() => {
+const startGenerating = () => {
     const secret = speakeasy.generateSecret({length: 20});
     generateQR(secret, function () {
         getTOTP(secret.base32);
